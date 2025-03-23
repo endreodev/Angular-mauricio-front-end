@@ -1,0 +1,39 @@
+<div
+  class="blank-layout-container justify-content-center align-items-center bg-light"
+>
+  <div
+    class="position-relative row w-100 h-100 bg-gredient justify-content-center"
+  >
+    <div class="col-lg-2 d-flex align-items-center">
+      <mat-card class="cardWithShadow boxed-auth">
+        <mat-card-content class="p-32">
+
+          <div class="logo-container">
+            <img src="assets/images/banner.png" alt="Banner" class="banner-image"> <!-- Added banner image -->
+          </div>
+
+          <div class="row m-t-24 custom-row">
+            <!-- PARA ADICIONAR ALGO ABAIXO DA IMAGEM -->
+          </div>
+
+          <form class="m-t-30" [formGroup]="loginForm" (submit)="onSubmit()">
+            <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Usuario</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput formControlName="login" />
+            </mat-form-field>
+            <!-- password -->
+            <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Senha</mat-label>
+            <mat-form-field appearance="outline" class="w-100" color="primary">
+              <input matInput type="password" formControlName="senha" />
+            </mat-form-field>
+            <!-- input -->
+
+            <button type="submit" mat-flat-button color="primary" class="w-100">
+              Acessar
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

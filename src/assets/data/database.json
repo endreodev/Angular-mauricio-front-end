@@ -1,0 +1,429 @@
+{
+    "sistema":
+      {
+
+        "titulo": "Gestor Agenda Social",
+        "descricao": "Gerenciamento AMM",
+        "suporte": "admin@example.com",
+        "versao": "1.25.02.1"
+      }
+    ,
+    "institutos": [
+      {
+        "id": 1,
+        "nome": "Jauru",
+        "url": "https://www.agendadatacenter.com.br/esocial_jauru",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 2,
+        "nome": "Pontes e Lacerda",
+        "url": "https://www.agendadatacenter.com.br/esocial_ponteslacerda",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 3,
+        "nome": "Conquista D'Oeste",
+        "url": "https://www.agendadatacenter.com.br/esocial_conquistadoeste",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 4,
+        "nome": "Aripuanã",
+        "url": "https://www.agendadatacenter.com.br/esocial_aripuana",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 5,
+        "nome": "Itiquira",
+        "url": "https://www.agendadatacenter.com.br/esocial_itiquira",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 6,
+        "nome": "Colniza",
+        "url": "https://www.agendadatacenter.com.br/esocial_colniza",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 7,
+        "nome": "Rosário Oeste",
+        "url": "https://www.agendadatacenter.com.br/esocial_rosariooeste",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 8,
+        "nome": "Barra do Garças",
+        "url": "https://www.agendadatacenter.com.br/esocial_barragarcas",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 9,
+        "nome": "Tabaporã",
+        "url": "https://www.agendadatacenter.com.br/esocial_tabapora",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 10,
+        "nome": "Curvelândia",
+        "url": "https://www.agendadatacenter.com.br/esocial_curvelandia",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 11,
+        "nome": "Itaúba",
+        "url": "https://www.agendadatacenter.com.br/esocial_itauba",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 12,
+        "nome": "Gaúcha do Norte",
+        "url": "https://www.agendadatacenter.com.br/esocial_gauchadonorte",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 13,
+        "nome": "Reserva do Cabaçal",
+        "url": "https://www.agendadatacenter.com.br/esocial_reservadocabacal",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 14,
+        "nome": "Acorizal",
+        "url": "https://www.agendadatacenter.com.br/esocial_acorizal",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 15,
+        "nome": "Porto Estrela",
+        "url": "https://www.agendadatacenter.com.br/esocial_portoestrela",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 16,
+        "nome": "General Carneiro",
+        "url": "https://www.agendadatacenter.com.br/esocial_generalcarneiro",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 17,
+        "nome": "Nova Marilândia",
+        "url": "https://www.agendadatacenter.com.br/esocial_novamarilandia",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 18,
+        "nome": "Rio Branco",
+        "url": "https://www.agendadatacenter.com.br/esocial_riobranco",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 19,
+        "nome": "Santo Afonso",
+        "url": "https://www.agendadatacenter.com.br/esocial_santoafonso",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 20,
+        "nome": "Tangará da Serra",
+        "url": "https://www.agendadatacenter.com.br/esocial_tangaradaserra",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 21,
+        "nome": "Chapada dos Guimarães",
+        "url": "https://www.agendadatacenter.com.br/esocial_chapadadosguimaraes",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 22,
+        "nome": "Barra do Bugres",
+        "url": "https://www.agendadatacenter.com.br/esocial_barradobugres",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 23,
+        "nome": "Juruena",
+        "url": "https://www.agendadatacenter.com.br/esocial_juruena",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 24,
+        "nome": "São José do Povo",
+        "url": "https://www.agendadatacenter.com.br/esocial_saojosedopovo",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 25,
+        "nome": "Planalto da Serra",
+        "url": "https://www.agendadatacenter.com.br/esocial_planaltodaserra",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 26,
+        "nome": "Campinápolis",
+        "url": "https://www.agendadatacenter.com.br/esocial_campinapolis",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 27,
+        "nome": "Nova Nazaré",
+        "url": "https://www.agendadatacenter.com.br/esocial_novanazare",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 28,
+        "nome": "Cocalinho",
+        "url": "https://www.agendadatacenter.com.br/esocial_cocalinho",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 29,
+        "nome": "Barão de Melgaço",
+        "url": "https://www.agendadatacenter.com.br/esocial_baraodemelgaco",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 30,
+        "nome": "Juína",
+        "url": "https://www.agendadatacenter.com.br/esocial_juina",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 31,
+        "nome": "Santo Antônio de Leverger",
+        "url": "https://www.agendadatacenter.com.br/esocial_santoantoniodeleverger",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 32,
+        "nome": "Castanheira",
+        "url": "https://www.agendadatacenter.com.br/esocial_castanheira",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 33,
+        "nome": "Nova Santa Helena",
+        "url": "https://www.agendadatacenter.com.br/esocial_novasantahelena",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 34,
+        "nome": "São Félix do Araguaia",
+        "url": "https://www.agendadatacenter.com.br/esocial_saofelixdoaraguaia",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 35,
+        "nome": "Vale de São Domingos",
+        "url": "https://www.agendadatacenter.com.br/esocial_valedesaodomingos",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 36,
+        "nome": "Novo Horizonte do Norte",
+        "url": "https://www.agendadatacenter.com.br/esocial_novohorizontedonorte",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 37,
+        "nome": "Pontal do Araguaia",
+        "url": "https://www.agendadatacenter.com.br/esocial_pontaldoaraguaia",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 38,
+        "nome": "Ponte Branca",
+        "url": "https://www.agendadatacenter.com.br/esocial_pontebranca",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 39,
+        "nome": "Santa Terezinha",
+        "url": "https://www.agendadatacenter.com.br/esocial_santaterezinha",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 40,
+        "nome": "Terra Nova do Norte",
+        "url": "https://www.agendadatacenter.com.br/esocial_terranovadonorte",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 41,
+        "nome": "Vila Bela",
+        "url": "https://www.agendadatacenter.com.br/esocial_vilabela",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 42,
+        "nome": "Juara",
+        "url": "https://www.agendadatacenter.com.br/esocial_juara",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 43,
+        "nome": "Santo Antônio do Leste",
+        "url": "https://www.agendadatacenter.com.br/esocial_santoantoniodoleste",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 44,
+        "nome": "Nova Lacerda",
+        "url": "https://www.agendadatacenter.com.br/esocial_novalacerda",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 45,
+        "nome": "Araguainha",
+        "url": "https://www.agendadatacenter.com.br/esocial_araguainha",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 46,
+        "nome": "Nova Olímpia",
+        "url": "https://www.agendadatacenter.com.br/esocial_novaolimpia",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 47,
+        "nome": "Primavera do Leste",
+        "url": "https://www.agendadatacenter.com.br/esocial_primaveradoleste",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 48,
+        "nome": "Confresa",
+        "url": "https://www.agendadatacenter.com.br/esocial_confresa",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 49,
+        "nome": "Araguaiana",
+        "url": "https://www.agendadatacenter.com.br/esocial_araguaiana",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 50,
+        "nome": "Mirassol d'Oeste",
+        "url": "https://www.agendadatacenter.com.br/esocial_MirassoldoEste",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 51,
+        "nome": "Várzea Grande",
+        "url": "https://www.agendadatacenter.com.br/esocial_varzeagrande",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 52,
+        "nome": "Paranatinga",
+        "url": "https://www.agendadatacenter.com.br/esocial_paranatinga",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 53,
+        "nome": "Glória do Oeste",
+        "url": "https://www.agendadatacenter.com.br/esocial_GLORIADOESTE",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 54,
+        "nome": "Poconé",
+        "url": "https://www.agendadatacenter.com.br/esocial_pocone",
+        "ativo": false,
+        "dados_acesso": []
+      },
+      {
+        "id": 55,
+        "nome": "Figueirópolis",
+        "url": "https://www.agendadatacenter.com.br/esocial_figueiropolis",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 56,
+        "nome": "Torixoréu",
+        "url": "https://www.agendadatacenter.com.br/esocial_torixoreu",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 57,
+        "nome": "Jangada",
+        "url": "https://www.agendadatacenter.com.br/esocial_jangada",
+        "ativo": true,
+        "dados_acesso": []
+      },
+      {
+        "id": 58,
+        "nome": "Abaiara",
+        "url": "https://www.agendadatacenter.com.br/abaiara/esocial",
+        "ativo": true,
+        "dados_acesso": []
+      }
+    ],
+    "notificacoes": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "user_dest": 0,
+        "mensagem": "Bem-vindo ao sistema!",
+        "lida": false,
+        "data": "2024-06-20T10:00:00Z"
+      }
+    ]
+  }

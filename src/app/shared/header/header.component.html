@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidebar()">
+    <mat-icon>{{ isOpen ? 'menu_open' : 'menu' }}</mat-icon> <!-- Corrected icon logic -->
+  </button>
+  <span class="toolbar-title">Gestor Amm</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button [matMenuTriggerFor]="settingsMenu">
+    <mat-icon>settings</mat-icon>
+    Configurações
+  </button>
+  <mat-menu #settingsMenu="matMenu">
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>app_registration</mat-icon>
+      Parametros
+    </button>
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>create_new_folder</mat-icon>
+      Cadastros Basicos
+    </button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="profileMenu">
+    <mat-icon>account_circle</mat-icon>
+    Perfil
+  </button>
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      Sair
+    </button>
+  </mat-menu>
+</mat-toolbar>

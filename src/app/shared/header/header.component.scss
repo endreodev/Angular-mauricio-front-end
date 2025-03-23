@@ -1,0 +1,14 @@
+mat-toolbar {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%); // Subtle gradient background
+  color: black; // Set text color to black
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); // Enhanced shadow effect
+}
+
+.toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

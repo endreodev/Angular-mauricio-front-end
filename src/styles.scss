@@ -1,0 +1,15 @@
+// @use '@angular/material' as mat;
+// @use '@angular/material/prebuilt-themes/azure-blue.css';
+// // @use './styles/theme';
+
+// @include mat.button-density(-2);
+// @include mat.form-field-density(-5);
+// @include mat.select-density(-5);
+// @include mat.table-density(-5);
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}

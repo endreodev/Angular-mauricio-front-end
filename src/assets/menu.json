@@ -1,0 +1,62 @@
+{
+  "menuConfig": [
+    {
+      "id": "animals",
+      "items": [
+        { "name": "Vertebrates", "subMenu": "vertebrates" },
+        { "name": "Invertebrates", "subMenu": "invertebrates" }
+      ]
+    },
+    {
+      "id": "vertebrates",
+      "items": [
+        { "name": "Fishes", "subMenu": "fish" },
+        { "name": "Amphibians", "subMenu": "amphibians" },
+        { "name": "Reptiles", "subMenu": "reptiles" },
+        { "name": "Birds" },
+        { "name": "Mammals" }
+      ]
+    },
+    {
+      "id": "invertebrates",
+      "items": [
+        { "name": "Insects" },
+        { "name": "Molluscs" },
+        { "name": "Crustaceans" },
+        { "name": "Corals" },
+        { "name": "Arachnids" },
+        { "name": "Velvet worms" },
+        { "name": "Horseshoe crabs" }
+      ]
+    },
+    {
+      "id": "fish",
+      "items": [
+        { "name": "Baikal oilfish" },
+        { "name": "Bala shark" },
+        { "name": "Ballan wrasse" },
+        { "name": "Bamboo shark" },
+        { "name": "Banded killifish" }
+      ]
+    },
+    {
+      "id": "amphibians",
+      "items": [
+        { "name": "Sonoran desert toad" },
+        { "name": "Western toad" },
+        { "name": "Arroyo toad" },
+        { "name": "Yosemite toad" }
+      ]
+    },
+    {
+      "id": "reptiles",
+      "items": [
+        { "name": "Banded Day Gecko" },
+        { "name": "Banded Gila Monster" },
+        { "name": "Black Tree Monitor" },
+        { "name": "Blue Spiny Lizard" },
+        { "name": "Velociraptor", "disabled": true }
+      ]
+    }
+  ]
+}
