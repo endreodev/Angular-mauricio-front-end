@@ -1,8 +1,8 @@
 @use "sass:map";
 @use "@angular/material" as mat;
 
-// @use "themecolors/orange_theme";
-@use "themecolors/blue_theme";
+@use "themecolors/orange_theme";
+// @use "themecolors/blue_theme";
 
 @use "variables" as *;
 @use "override-component";

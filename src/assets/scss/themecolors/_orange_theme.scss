@@ -1,7 +1,9 @@
-html .orange_theme {
-  --mat-sys-primary: rgb(251, 151, 120);
-  --mat-sys-primary-fixed-dim: rgb(251, 151, 120, 0.15);
-  --mat-sys-secondary: rgb(3, 201, 215);
-  --mat-sys-secondary-fixed-dim: rgb(3, 201, 215, 0.15);
-  --mat-sys-error-fixed-dim: rgba(252, 75, 108, 0.15);
+
+
+html .blue_theme {
+  --mat-sys-primary: rgb(5, 68, 136);
+  --mat-sys-primary-fixed-dim: rgba(0, 123, 255, 0.15);
+  --mat-sys-secondary: rgb(108, 117, 125);
+  --mat-sys-secondary-fixed-dim: rgba(108, 117, 125, 0.15);
+  --mat-sys-error-fixed-dim: rgba(220, 53, 69, 0.15);
 }

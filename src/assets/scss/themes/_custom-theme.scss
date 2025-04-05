@@ -1,0 +1,18 @@
+@use '@angular/material' as mat;
+
+// Define the primary, accent, and warn palettes
+$primary-color: mat.define-palette(mat.$indigo-palette, 500, 300, 700);
+$accent-color: mat.define-palette(mat.$pink-palette, 200, 100, 400);
+$warn-color: mat.define-palette(mat.$red-palette);
+
+// Define the theme
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $primary-color,
+    accent: $accent-color,
+    warn: $warn-color,
+  )
+));
+
+// Include the theme styles
+@include mat.all-component-themes($custom-theme);
