@@ -12,7 +12,7 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    canActivate: [AuthGuard], // Adicionar o guarda
+    //canActivate: [AuthGuard], // Adicionar o guarda
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' }, // Rota padrão do dashboard
       { path: 'home', component: HomeComponent },

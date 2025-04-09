@@ -16,18 +16,17 @@ export class LoadingInterceptor implements HttpInterceptor {
   constructor(private loadingService: LoadingService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    // Exibir o loading
     this.loadingService.show();
 
-    // Adicionar o token Bearer
-    const token = localStorage.getItem('token');
-    const clonedRequest = token
+    const token = localStorage.getItem('access_token');
+    const isLoginRequest = req.url.includes('/login');
+
+    const clonedRequest = !isLoginRequest && token
       ? req.clone({ setHeaders: { Authorization: `Bearer ${token}` } })
       : req;
 
     return next.handle(clonedRequest).pipe(
       finalize(() => {
-        // Ocultar o loading
         this.loadingService.hide();
       })
     );

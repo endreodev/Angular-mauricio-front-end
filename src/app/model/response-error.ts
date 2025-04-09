@@ -1,5 +1,5 @@
 
 
 export interface ResponseError {
-  nome: string;
+  mesage: string;
 }

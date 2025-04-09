@@ -1,50 +1,41 @@
-<div class="logo-container">
-  <img src="assets/images/banner.png" alt="Banner" class="banner-image">
-</div>
+<mat-sidenav-content class="example-sidenav">
+  <mat-toolbar color="primary">
 
-<button mat-button [matMenuTriggerFor]="animals">Animal index</button>
-<mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
-</mat-menu>
+    <!-- Botões principais diretamente na toolbar -->
+    <ng-container *ngFor="let item of menuData" class="parent">
+      <button class="menu-button full-width" 
+        mat-button
+        [ngStyle]="getItemStyle(item)"
+        [matMenuTriggerFor]="item.children ? getSubMenu(item) : null"
+        (click)="item.route ? navigate(item.route) : null" >
+        <div class="button-content">
+          <mat-icon>{{ item.icon }}</mat-icon>
+          <span>{{ item.label }}</span>
+        </div>
+      </button>
+    </ng-container>
 
-<mat-menu #vertebrates="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-  <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
-  <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
-  <button mat-menu-item>Birds</button>
-  <button mat-menu-item>Mammals</button>
-</mat-menu>
+    <!-- Menus dinâmicos para todos os níveis -->
+    <ng-container *ngFor="let item of flattenMenuData(menuData); let i = index">
+      <mat-menu #dynamicMenu="matMenu" *ngIf="item.children">
+        <div class="submenu-container">
+          <ng-container *ngFor="let subItem of item.children">
+            <button
+              mat-menu-item
+              [ngStyle]="getItemStyle(subItem)"
+              [matMenuTriggerFor]="subItem.children ? getSubMenu(subItem) : null"
+              (click)="subItem.route ? navigate(subItem.route) : null">
+              <div class="button-content">
+                <span>{{ subItem.label }}</span>
+               
+              </div>
+            </button>
+          </ng-container>
+        </div>
+      </mat-menu>
+    </ng-container>
+  </mat-toolbar>
 
-<mat-menu #invertebrates="matMenu">
-  <button mat-menu-item>Insects</button>
-  <button mat-menu-item>Molluscs</button>
-  <button mat-menu-item>Crustaceans</button>
-  <button mat-menu-item>Corals</button>
-  <button mat-menu-item>Arachnids</button>
-  <button mat-menu-item>Velvet worms</button>
-  <button mat-menu-item>Horseshoe crabs</button>
-</mat-menu>
-
-<mat-menu #fish="matMenu">
-  <button mat-menu-item>Baikal oilfish</button>
-  <button mat-menu-item>Bala shark</button>
-  <button mat-menu-item>Ballan wrasse</button>
-  <button mat-menu-item>Bamboo shark</button>
-  <button mat-menu-item>Banded killifish</button>
-</mat-menu>
-
-<mat-menu #amphibians="matMenu">
-  <button mat-menu-item>Sonoran desert toad</button>
-  <button mat-menu-item>Western toad</button>
-  <button mat-menu-item>Arroyo toad</button>
-  <button mat-menu-item>Yosemite toad</button>
-</mat-menu>
-
-<mat-menu #reptiles="matMenu">
-  <button mat-menu-item>Banded Day Gecko</button>
-  <button mat-menu-item>Banded Gila Monster</button>
-  <button mat-menu-item>Black Tree Monitor</button>
-  <button mat-menu-item>Blue Spiny Lizard</button>
-  <button mat-menu-item disabled>Velociraptor</button>
-</mat-menu>
+  <ng-content></ng-content>
+  
+</mat-sidenav-content>

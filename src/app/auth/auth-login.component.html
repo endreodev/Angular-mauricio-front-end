@@ -9,28 +9,26 @@
         <mat-card-content class="p-32">
 
           <div class="logo-container">
-            <img src="assets/images/banner.png" alt="Banner" class="banner-image"> <!-- Added banner image -->
-          </div>
-
-          <div class="row m-t-24 custom-row">
-            <!-- PARA ADICIONAR ALGO ABAIXO DA IMAGEM -->
+            <img src="assets/images/banner.png" alt="Banner" class="banner-image">
           </div>
 
           <form class="m-t-30" [formGroup]="loginForm" (submit)="onSubmit()">
+
             <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Usuario</mat-label>
             <mat-form-field appearance="outline" class="w-100" color="primary">
-              <input matInput formControlName="login" />
+              <input matInput formControlName="username" [disabled]="isLoading" />
             </mat-form-field>
-            <!-- password -->
+      
             <mat-label class="f-s-14 f-w-600 m-b-12 d-block">Senha</mat-label>
             <mat-form-field appearance="outline" class="w-100" color="primary">
-              <input matInput type="password" formControlName="senha" />
+              <input matInput type="password" formControlName="password" [disabled]="isLoading" />
             </mat-form-field>
-            <!-- input -->
 
-            <button type="submit" mat-flat-button color="primary" class="w-100">
-              Acessar
+            <button type="submit" mat-flat-button color="primary" class="w-100" [disabled]="isLoading">
+              <span *ngIf="!isLoading">Acessar</span>
+              <mat-spinner *ngIf="isLoading" diameter="20"></mat-spinner>
             </button>
+            
           </form>
         </mat-card-content>
       </mat-card>

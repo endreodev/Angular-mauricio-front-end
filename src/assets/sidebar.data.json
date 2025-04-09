@@ -1,0 +1,145 @@
+{
+  "menu": [
+    {
+      "label": "Cadastros",
+      "id": "cadastros",
+      "icon": "settings",
+      "description": "CADASTROS DO SISTEMA",
+      "rotina": "CADASTROS",
+      "children": [
+        {
+          "label": "Departamento",
+          "route": "/cad001",
+          "description": "CADASTRO DE DEPARTAMENTOS"
+        },
+        {
+          "label": "Documentos",
+          "route": "/cad002",
+          "description": "CADASTRO DE DOCUMENTOS DE IDENTIFICAÇÃO"
+        },
+        {
+          "label": "Segurança",
+          "children": [
+            {
+              "label": "Controle de Acesso",
+              "route": "/cad008",
+              "description": "CONTROLE DE ACESSO DO USUÁRIO"
+            }
+          ]
+        },
+        {
+          "label": "Usuários",
+          "children": [
+            {
+              "label": "Cadastro",
+              "route": "/cad003",
+              "description": "CADASTRO DE USUÁRIOS"
+            },
+            {
+              "label": "Perfil",
+              "route": "/cad004",
+              "description": "CADASTRO DE PERFIL DO USUÁRIO"
+            },
+            {
+              "label": "Perfis - Vínculos",
+              "route": "/cad005",
+              "description": "CADASTRO DE PERFIL DO USUÁRIO"
+            },
+            {
+              "label": "Senhas",
+              "route": "/cad006",
+              "description": "CADASTRO DE SENHAS DO USUÁRIO"
+            },
+            {
+              "label": "Situação",
+              "route": "/cad007",
+              "description": "CADASTRO DA SITUAÇÃO DO USUÁRIO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Clientes",
+      "id": "clientes",
+      "icon": "people",
+      "description": "CADASTRO DE CLIENTES",
+      "rotina": "CLIENTES",
+      "children": [
+        {
+          "label": "Cadastro",
+          "route": "/cli001",
+          "description": "CADASTRO DE CLIENTES"
+        },
+        {
+          "label": "Monitoramento",
+          "children": [
+            {
+              "label": "Situação do Cadastro",
+              "route": "/cli002",
+              "description": "SITUAÇÃO DO CADASTRO DE CLIENTES"
+            },
+            {
+              "label": "Vínculo Filiais",
+              "route": "/cli003",
+              "description": "VÍNCULO DE CLIENTES - FILIAIS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Câmbio",
+      "id": "cambio",
+      "icon": "currency_exchange",
+      "description": "CADASTRO DE CÂMBIO",
+      "rotina": "CAMBIO"
+    },
+    {
+      "label": "Ouro",
+      "id": "ouro",
+      "icon": "star",
+      "description": "CADASTRO DE OURO",
+      "rotina": "OURO",
+      "children": [
+        {
+          "label": "Gerencial",
+          "children": [
+            {
+              "label": "Cadastro",
+              "children": [
+                {
+                  "label": "Controle de Barras",
+                  "route": "/ger004",
+                  "description": "CADASTRO DO CONTROLE DE BARRAS"
+                }
+              ]
+            },
+            {
+              "label": "Lançamentos Fichas",
+              "route": "/ger001",
+              "description": "CADASTRO DE LANÇAMENTOS DE FICHAS INDIVIDUAIS"
+            },
+            {
+              "label": "Operação de Cliente",
+              "route": "/ger003",
+              "description": "CADASTRO OPERAÇÃO DE CLIENTE"
+            },
+            {
+              "label": "Trava Fornecedor",
+              "route": "/ger002",
+              "description": "CADASTRO TRAVA OPERAÇÃO FORNECEDOR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Tesouraria",
+      "id": "tesouraria",
+      "icon": "account_balance_wallet",
+      "description": "CADASTRO DE TESOURARIA",
+      "rotina": "TESOURARIA"
+    }
+  ]
+}

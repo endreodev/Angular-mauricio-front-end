@@ -1,6 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core'; 
 import { environment } from '../../../environments/env';
+import { LoginModel } from '../../model/auth/login.model';
 
 
 @Injectable({
@@ -11,8 +12,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  login( dados: any): any {
-    return this.http.post(`${environment.apiUrl}/login`, dados);
+  login(body: LoginModel): any {
+    return this.http.post(`${environment.apiUrl}/login`, body);
   }
 
 }
